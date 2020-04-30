@@ -1,0 +1,17 @@
+D:\Github\CommonLayer\bin\Debug\netcoreapp2.1\CommonLayer.deps.json
+D:\Github\CommonLayer\bin\Debug\netcoreapp2.1\CommonLayer.dll
+D:\Github\CommonLayer\bin\Debug\netcoreapp2.1\CommonLayer.pdb
+D:\Github\CommonLayer\obj\Debug\netcoreapp2.1\CommonLayer.csproj.CoreCompileInputs.cache
+D:\Github\CommonLayer\obj\Debug\netcoreapp2.1\CommonLayer.AssemblyInfoInputs.cache
+D:\Github\CommonLayer\obj\Debug\netcoreapp2.1\CommonLayer.AssemblyInfo.cs
+D:\Github\CommonLayer\obj\Debug\netcoreapp2.1\CommonLayer.dll
+D:\Github\CommonLayer\obj\Debug\netcoreapp2.1\CommonLayer.pdb
+D:\Github\Fundoo\CommonLayer\bin\Debug\netcoreapp2.1\CommonLayer.deps.json
+D:\Github\Fundoo\CommonLayer\bin\Debug\netcoreapp2.1\CommonLayer.dll
+D:\Github\Fundoo\CommonLayer\bin\Debug\netcoreapp2.1\CommonLayer.pdb
+D:\Github\Fundoo\CommonLayer\obj\Debug\netcoreapp2.1\CommonLayer.csprojAssemblyReference.cache
+D:\Github\Fundoo\CommonLayer\obj\Debug\netcoreapp2.1\CommonLayer.csproj.CoreCompileInputs.cache
+D:\Github\Fundoo\CommonLayer\obj\Debug\netcoreapp2.1\CommonLayer.AssemblyInfoInputs.cache
+D:\Github\Fundoo\CommonLayer\obj\Debug\netcoreapp2.1\CommonLayer.AssemblyInfo.cs
+D:\Github\Fundoo\CommonLayer\obj\Debug\netcoreapp2.1\CommonLayer.dll
+D:\Github\Fundoo\CommonLayer\obj\Debug\netcoreapp2.1\CommonLayer.pdb

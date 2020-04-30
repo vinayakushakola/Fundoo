@@ -1,0 +1,5 @@
+D:\Github\RepositoryLayer\bin\Debug\netcoreapp3.1\RepositoryLayer.deps.json
+D:\Github\RepositoryLayer\bin\Debug\netcoreapp3.1\RepositoryLayer.dll
+D:\Github\RepositoryLayer\obj\Debug\netcoreapp3.1\RepositoryLayer.csprojAssemblyReference.cache
+D:\Github\RepositoryLayer\obj\Debug\netcoreapp3.1\RepositoryLayer.AssemblyInfoInputs.cache
+D:\Github\RepositoryLayer\obj\Debug\netcoreapp3.1\RepositoryLayer.AssemblyInfo.cs

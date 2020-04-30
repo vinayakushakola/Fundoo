@@ -1,0 +1,17 @@
+D:\Github\BusinessLayer\bin\Debug\netcoreapp2.1\BusinessLayer.deps.json
+D:\Github\BusinessLayer\bin\Debug\netcoreapp2.1\BusinessLayer.dll
+D:\Github\BusinessLayer\bin\Debug\netcoreapp2.1\BusinessLayer.pdb
+D:\Github\BusinessLayer\obj\Debug\netcoreapp2.1\BusinessLayer.csproj.CoreCompileInputs.cache
+D:\Github\BusinessLayer\obj\Debug\netcoreapp2.1\BusinessLayer.AssemblyInfoInputs.cache
+D:\Github\BusinessLayer\obj\Debug\netcoreapp2.1\BusinessLayer.AssemblyInfo.cs
+D:\Github\BusinessLayer\obj\Debug\netcoreapp2.1\BusinessLayer.dll
+D:\Github\BusinessLayer\obj\Debug\netcoreapp2.1\BusinessLayer.pdb
+D:\Github\Fundoo\BusinessLayer\bin\Debug\netcoreapp2.1\BusinessLayer.deps.json
+D:\Github\Fundoo\BusinessLayer\bin\Debug\netcoreapp2.1\BusinessLayer.dll
+D:\Github\Fundoo\BusinessLayer\bin\Debug\netcoreapp2.1\BusinessLayer.pdb
+D:\Github\Fundoo\BusinessLayer\obj\Debug\netcoreapp2.1\BusinessLayer.csprojAssemblyReference.cache
+D:\Github\Fundoo\BusinessLayer\obj\Debug\netcoreapp2.1\BusinessLayer.csproj.CoreCompileInputs.cache
+D:\Github\Fundoo\BusinessLayer\obj\Debug\netcoreapp2.1\BusinessLayer.AssemblyInfoInputs.cache
+D:\Github\Fundoo\BusinessLayer\obj\Debug\netcoreapp2.1\BusinessLayer.AssemblyInfo.cs
+D:\Github\Fundoo\BusinessLayer\obj\Debug\netcoreapp2.1\BusinessLayer.dll
+D:\Github\Fundoo\BusinessLayer\obj\Debug\netcoreapp2.1\BusinessLayer.pdb
