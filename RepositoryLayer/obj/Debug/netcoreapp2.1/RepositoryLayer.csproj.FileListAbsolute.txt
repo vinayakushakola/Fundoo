@@ -23,5 +23,5 @@ D:\Github\Fundoo\RepositoryLayer\obj\Debug\netcoreapp2.1\RepositoryLayer.dll
 D:\Github\Fundoo\RepositoryLayer\obj\Debug\netcoreapp2.1\RepositoryLayer.pdb
 D:\Github\Fundoo\RepositoryLayer\bin\Debug\netcoreapp2.1\RepositoryLayer.runtimeconfig.json
 D:\Github\Fundoo\RepositoryLayer\bin\Debug\netcoreapp2.1\RepositoryLayer.runtimeconfig.dev.json
-D:\Github\Fundoo\RepositoryLayer\obj\Debug\netcoreapp2.1\RepositoryLayer.csproj.CoreCompileInputs.cache
 D:\Github\Fundoo\RepositoryLayer\obj\Debug\netcoreapp2.1\RepositoryLayer.genruntimeconfig.cache
+D:\Github\Fundoo\RepositoryLayer\obj\Debug\netcoreapp2.1\RepositoryLayer.csproj.CoreCompileInputs.cache

@@ -6,7 +6,7 @@ using System.Text;
 
 namespace CommonLayer.Models
 {
-    public class SignUp
+    public class UserDetails
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
@@ -20,14 +20,6 @@ namespace CommonLayer.Models
         [RegularExpression("^[a-zA-Z]+$", ErrorMessage = "Your Last Name should only contain Alphabets!")]
         public string LastName { get; set; }
 
-        [DataType(DataType.DateTime)]
-        [DisplayFormat(DataFormatString = "{0:dd-MM-yyyy}", ApplyFormatInEditMode = true)]
-        public DateTime CreatedDate { get; set; }
-
-        [DataType(DataType.DateTime)]
-        [DisplayFormat(DataFormatString = "{0:dd-MM-yyyy}", ApplyFormatInEditMode = true)]
-        public DateTime ModifiedDate { get; set; }
-
         [Required]
         [EmailAddress]
         public string Email { get; set; }
@@ -35,5 +27,13 @@ namespace CommonLayer.Models
         [Required]
         [DataType(DataType.Password)]
         public string Password { get; set; }
+
+        [DataType(DataType.DateTime)]
+        [DisplayFormat(DataFormatString = "{0:dd-MM-yyyy}", ApplyFormatInEditMode = true)]
+        public DateTime CreatedDate { get; set; }
+
+        [DataType(DataType.DateTime)]
+        [DisplayFormat(DataFormatString = "{0:dd-MM-yyyy}", ApplyFormatInEditMode = true)]
+        public DateTime ModifiedDate { get; set; }
     }
 }

@@ -15,3 +15,8 @@ D:\Github\Fundoo\BusinessLayer\obj\Debug\netcoreapp2.1\BusinessLayer.AssemblyInf
 D:\Github\Fundoo\BusinessLayer\obj\Debug\netcoreapp2.1\BusinessLayer.AssemblyInfo.cs
 D:\Github\Fundoo\BusinessLayer\obj\Debug\netcoreapp2.1\BusinessLayer.dll
 D:\Github\Fundoo\BusinessLayer\obj\Debug\netcoreapp2.1\BusinessLayer.pdb
+D:\Github\Fundoo\BusinessLayer\bin\Debug\netcoreapp2.1\CommonLayer.dll
+D:\Github\Fundoo\BusinessLayer\bin\Debug\netcoreapp2.1\RepositoryLayer.dll
+D:\Github\Fundoo\BusinessLayer\bin\Debug\netcoreapp2.1\CommonLayer.pdb
+D:\Github\Fundoo\BusinessLayer\bin\Debug\netcoreapp2.1\RepositoryLayer.pdb
+D:\Github\Fundoo\BusinessLayer\obj\Debug\netcoreapp2.1\BusinessLayer.csproj.CopyComplete

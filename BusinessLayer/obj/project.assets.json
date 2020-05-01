@@ -908,6 +908,33 @@
         "compile": {
           "ref/netstandard1.3/System.Threading.Tasks.dll": {}
         }
+      },
+      "CommonLayer/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.1",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.SqlServer": "2.1.14"
+        },
+        "compile": {
+          "bin/placeholder/CommonLayer.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CommonLayer.dll": {}
+        }
+      },
+      "RepositoryLayer/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.1",
+        "dependencies": {
+          "CommonLayer": "1.0.0",
+          "Microsoft.EntityFrameworkCore.SqlServer": "2.1.14"
+        },
+        "compile": {
+          "bin/placeholder/RepositoryLayer.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/RepositoryLayer.dll": {}
+        }
       }
     }
   },
@@ -3460,12 +3487,24 @@
         "system.threading.tasks.4.0.11.nupkg.sha512",
         "system.threading.tasks.nuspec"
       ]
+    },
+    "CommonLayer/1.0.0": {
+      "type": "project",
+      "path": "../CommonLayer/CommonLayer.csproj",
+      "msbuildProject": "../CommonLayer/CommonLayer.csproj"
+    },
+    "RepositoryLayer/1.0.0": {
+      "type": "project",
+      "path": "../RepositoryLayer/RepositoryLayer.csproj",
+      "msbuildProject": "../RepositoryLayer/RepositoryLayer.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
+      "CommonLayer >= 1.0.0",
       "Microsoft.EntityFrameworkCore.SqlServer >= 2.1.14",
-      "Microsoft.NETCore.App >= 2.1.0"
+      "Microsoft.NETCore.App >= 2.1.0",
+      "RepositoryLayer >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -3497,7 +3536,14 @@
       },
       "frameworks": {
         "netcoreapp2.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\Github\\Fundoo\\CommonLayer\\CommonLayer.csproj": {
+              "projectPath": "D:\\Github\\Fundoo\\CommonLayer\\CommonLayer.csproj"
+            },
+            "D:\\Github\\Fundoo\\RepositoryLayer\\RepositoryLayer.csproj": {
+              "projectPath": "D:\\Github\\Fundoo\\RepositoryLayer\\RepositoryLayer.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

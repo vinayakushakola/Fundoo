@@ -13,9 +13,8 @@ namespace RepositoryLayer.ADbcontext
         {
 
         }
-        public DbSet<Login> Logins { get; set; }
 
-        public DbSet<SignUp> Registrations { get; set; }
+        public DbSet<UserDetails> Users { get; set; }
 
     }
 }

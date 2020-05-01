@@ -19,20 +19,7 @@ namespace RepositoryLayer.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("CommonLayer.Models.Login", b =>
-                {
-                    b.Property<string>("Email")
-                        .ValueGeneratedOnAdd();
-
-                    b.Property<string>("Password")
-                        .IsRequired();
-
-                    b.HasKey("Email");
-
-                    b.ToTable("Logins");
-                });
-
-            modelBuilder.Entity("CommonLayer.Models.SignUp", b =>
+            modelBuilder.Entity("CommonLayer.Models.UserDetails", b =>
                 {
                     b.Property<int>("ID")
                         .ValueGeneratedOnAdd()
@@ -56,7 +43,7 @@ namespace RepositoryLayer.Migrations
 
                     b.HasKey("ID");
 
-                    b.ToTable("Registrations");
+                    b.ToTable("Users");
                 });
 #pragma warning restore 612, 618
         }

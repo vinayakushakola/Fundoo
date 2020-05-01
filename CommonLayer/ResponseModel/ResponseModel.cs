@@ -5,7 +5,7 @@ using System.Text;
 
 namespace CommonLayer.ResponseModel
 {
-    public class SignUpResponseModel
+    public class ResponseModel
     {
         public int ID { set; get; }
 

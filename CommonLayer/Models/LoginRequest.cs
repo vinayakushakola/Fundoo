@@ -5,9 +5,8 @@ using System.Text;
 
 namespace CommonLayer.Models
 {
-    public class Login
+    public class LoginRequest
     {
-        [Key]
         [Required]
         [EmailAddress]
         public string Email { get; set; }

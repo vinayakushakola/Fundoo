@@ -34,7 +34,6 @@ D:\Github\Fundoo\Fundoo\bin\Debug\netcoreapp2.1\RepositoryLayer.dll
 D:\Github\Fundoo\Fundoo\bin\Debug\netcoreapp2.1\RepositoryLayer.pdb
 D:\Github\Fundoo\Fundoo\bin\Debug\netcoreapp2.1\CommonLayer.pdb
 D:\Github\Fundoo\Fundoo\obj\Debug\netcoreapp2.1\Fundoo.csprojAssemblyReference.cache
-D:\Github\Fundoo\Fundoo\obj\Debug\netcoreapp2.1\Fundoo.csproj.CoreCompileInputs.cache
 D:\Github\Fundoo\Fundoo\obj\Debug\netcoreapp2.1\Fundoo.RazorAssemblyInfo.cache
 D:\Github\Fundoo\Fundoo\obj\Debug\netcoreapp2.1\Fundoo.RazorAssemblyInfo.cs
 D:\Github\Fundoo\Fundoo\obj\Debug\netcoreapp2.1\Fundoo.AssemblyInfoInputs.cache
@@ -44,3 +43,6 @@ D:\Github\Fundoo\Fundoo\obj\Debug\netcoreapp2.1\Fundoo.csproj.CopyComplete
 D:\Github\Fundoo\Fundoo\obj\Debug\netcoreapp2.1\Fundoo.dll
 D:\Github\Fundoo\Fundoo\obj\Debug\netcoreapp2.1\Fundoo.pdb
 D:\Github\Fundoo\Fundoo\obj\Debug\netcoreapp2.1\Fundoo.genruntimeconfig.cache
+D:\Github\Fundoo\Fundoo\bin\Debug\netcoreapp2.1\BusinessLayer.dll
+D:\Github\Fundoo\Fundoo\bin\Debug\netcoreapp2.1\BusinessLayer.pdb
+D:\Github\Fundoo\Fundoo\obj\Debug\netcoreapp2.1\Fundoo.csproj.CoreCompileInputs.cache
