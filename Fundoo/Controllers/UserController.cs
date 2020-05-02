@@ -60,7 +60,7 @@ namespace Fundoo.Controllers
                 else
                 {
                     success = true;
-                    string userFullName = data.FirstName + data.LastName;
+                    string userFullName = data.FirstName + " " + data.LastName;
                     message = "Hello " + userFullName + ", Your Account Created Successfully";
                     return Ok(new { success, message, data });
                 }
@@ -99,6 +99,46 @@ namespace Fundoo.Controllers
             {
                 return BadRequest(new { ex.Message });
             }
+        }
+
+        [HttpGet("{id}")]
+        public ActionResult<string> Get(int id)
+        {
+            return "value";
+        }
+
+        [HttpPost]
+        [Route("ForgotPassword")]
+        public IActionResult ForgotPassword(ForgotPassword forgotPassword)
+        {
+            try
+            {
+                ResponseModel data = _signUpBusiness.ForgotPassword(forgotPassword);
+                bool success = false;
+                string message;
+                if (data == null)
+                {
+                    message = "No User Found with that Email!";
+                    return Ok(new { success, message });
+                }
+                else
+                {
+                    success = true;
+                    string userFullName = data.FirstName + " " + data.LastName;
+                    message = "Hello " + userFullName + ", Your Password Changed Successfully";
+                    return Ok(new { success, message, data });
+                }
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { ex.Message });
+            }
+        }
+
+
+        [HttpDelete("{id}")]
+        public void Delete(int id)
+        {
         }
 
         public string CreateToken(ResponseModel userToken, string type)

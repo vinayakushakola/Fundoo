@@ -14,3 +14,4 @@ D:\Github\Fundoo\CommonLayer\obj\Debug\netcoreapp2.1\CommonLayer.AssemblyInfoInp
 D:\Github\Fundoo\CommonLayer\obj\Debug\netcoreapp2.1\CommonLayer.AssemblyInfo.cs
 D:\Github\Fundoo\CommonLayer\obj\Debug\netcoreapp2.1\CommonLayer.dll
 D:\Github\Fundoo\CommonLayer\obj\Debug\netcoreapp2.1\CommonLayer.pdb
+D:\Github\Fundoo\CommonLayer\obj\Debug\netcoreapp2.1\CommonLayer.csprojAssemblyReference.cache

@@ -13,5 +13,9 @@ namespace BusinessLayer.Interface
 
         ResponseModel UserLogin(LoginRequest login);
 
+        List<ResponseModel> GetUsersData();
+
+        ResponseModel ForgotPassword(ForgotPassword forgotPassword);
+
     }
 }

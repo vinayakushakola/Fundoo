@@ -13,5 +13,9 @@ namespace RepositoryLayer.Interface
 
         ResponseModel userLogin(LoginRequest login);
 
+        List<ResponseModel> GetUsersData();
+
+        ResponseModel ForgotPassword(ForgotPassword forgotPassword);
+
     }
 }

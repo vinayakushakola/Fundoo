@@ -27,5 +27,18 @@ namespace BusinessLayer.Service
             ResponseModel responseData = signUpRepository.userLogin(login);
             return responseData;
         }
+
+        public List<ResponseModel> GetUsersData()
+        {
+            List<ResponseModel> usersList = signUpRepository.GetUsersData();
+            return usersList;
+        }
+
+        public ResponseModel ForgotPassword(ForgotPassword forgotPassword)
+        {
+            ResponseModel responseData = signUpRepository.ForgotPassword(forgotPassword);
+            return responseData;
+        }
+
     }
 }

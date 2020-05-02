@@ -5,6 +5,7 @@ using RepositoryLayer.ADbcontext;
 using RepositoryLayer.Interface;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace RepositoryLayer.Service
@@ -61,8 +62,8 @@ namespace RepositoryLayer.Service
         {
             try
             {
-                string Password;
-                byte[] decodedBytes;
+                //string Password;
+                //byte[] decodedBytes;
                 ResponseModel responseData = null;
                 var users = _context.Users;
                 foreach(UserDetails user in users)
@@ -85,6 +86,56 @@ namespace RepositoryLayer.Service
                 return responseData;
             }
             catch(Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+        public List<ResponseModel> GetUsersData()
+        {
+            try
+            {
+                var usersList = new List<ResponseModel>();
+                ResponseModel responseData = null;
+                var users = _context.Users;
+                foreach(UserDetails user in users)
+                {
+                    responseData = new ResponseModel()
+                    {
+                        ID = user.ID,
+                        FirstName = user.FirstName,
+                        LastName = user.LastName,
+                        Email = user.Email
+                    };
+                    usersList.Add(responseData);
+                }
+                return usersList;
+            }
+            catch(Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+
+        public ResponseModel ForgotPassword(ForgotPassword forgotPassword)
+        {
+            try
+            {
+                ResponseModel responseData = null;
+                var users = _context.Users.First(user => user.Email == forgotPassword.Email);
+                users.Password = forgotPassword.NewPassword;
+                _context.SaveChanges();
+
+
+                responseData = new ResponseModel()
+                {
+                    ID = users.ID,
+                    FirstName = users.FirstName,
+                    LastName = users.LastName,
+                    Email = users.Email
+                    };
+                return responseData;
+            }
+            catch (Exception ex)
             {
                 throw new Exception(ex.Message);
             }
