@@ -1,40 +1,48 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
+using System.Security.Claims;
+using System.Text;
 using System.Threading.Tasks;
 using BusinessLayer.Interface;
 using CommonLayer.Models;
 using CommonLayer.RequestModel;
 using CommonLayer.ResponseModel;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Configuration;
+using Microsoft.IdentityModel.Tokens;
 
 namespace Fundoo.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class ValuesController : ControllerBase
+    public class UserController : ControllerBase
     {
         private readonly IUserBusiness _signUpBusiness;
-        public ValuesController(IUserBusiness signUpBusiness)
+        private IConfiguration _config;
+
+        public UserController(IUserBusiness signUpBusiness, IConfiguration config)
         {
             _signUpBusiness = signUpBusiness;
+            _config = config;
         }
 
-        // GET api/values
-        [HttpGet]
-        public ActionResult<IEnumerable<string>> Get()
+        [HttpGet, Authorize]
+        public ActionResult GetUsersData()
         {
-            return new string[] { "value1", "value2" };
+            try
+            {
+                List<ResponseModel> userData = _signUpBusiness.GetUsersData();
+                return Ok(userData.ToList());
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { ex.Message });
+            }
         }
 
-        // GET api/values/5
-        [HttpGet("{id}")]
-        public ActionResult<string> Get(int id)
-        {
-            return "value";
-        }
-
-        // POST api/values
         [HttpPost]
         [Route("SignUp")]
         public IActionResult CreateAccount(SignUpRequestModel signUpRequest)
@@ -83,7 +91,8 @@ namespace Fundoo.Controllers
                     success = true;
                     string userFullName = data.FirstName + " " + data.LastName;
                     message = "Hello " + userFullName + ", You Logged in Successfully";
-                    return Ok(new { success, message, data });
+                    var jsonToken = CreateToken(data, "login");
+                    return Ok(new { success, message, data, jsonToken });
                 }
             }
             catch (Exception ex)
@@ -91,16 +100,24 @@ namespace Fundoo.Controllers
                 return BadRequest(new { ex.Message });
             }
         }
-        // PUT api/values/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
-        {
-        }
 
-        // DELETE api/values/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
+        public string CreateToken(ResponseModel userToken, string type)
         {
+            try
+            {
+                var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_config["Jwt:Key"]));
+                var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
+
+                var token = new JwtSecurityToken(_config["Jwt:Issuer"],
+                    _config["Jwt:Issuer"],
+                    expires: DateTime.Now.AddHours(1),
+                    signingCredentials: creds);
+                return new JwtSecurityTokenHandler().WriteToken(token);
+            }
+            catch(Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
         }
     }
 }
